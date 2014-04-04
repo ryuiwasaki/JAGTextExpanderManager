@@ -50,7 +50,7 @@ typedef BOOL  (^PrepareForFillSwitchAction)(NSString *textIdentifier);
 
 /**
  * TextExpander Utility
-**/
+ **/
 + (BOOL)isTextExpanderTouchInstalled;
 + (BOOL)textExpanderTouchSupportsFillins;
 + (void)clearSharedSnippets;
@@ -62,7 +62,6 @@ typedef BOOL  (^PrepareForFillSwitchAction)(NSString *textIdentifier);
  *  @param textObjects such as a UITextField for which you want to enable TextExpander Snippets.
  *  @param nextDelegate textObjects's delegate object.
  *
- *
  **/
 - (void)enableTextExpanderToTextObjects:(NSArray *)textObjects nextDelegate:(id)nextDelegate;
 
@@ -71,7 +70,6 @@ typedef BOOL  (^PrepareForFillSwitchAction)(NSString *textIdentifier);
  *
  *  @param textObjects such as a UITextField for which you want to enable TextExpander snippets and fill-in.
  *  @param nextDelegate textObjects's delegate object.
- *
  *
  **/
 - (void)enableTextExpanderInAdditionFillinsToTextObjects:(NSArray *)textObjects nextDelegate:(id)nextDelegate;
@@ -109,9 +107,9 @@ typedef BOOL  (^PrepareForFillSwitchAction)(NSString *textIdentifier);
 - (BOOL)updateSnippets; // Update snippets data.
 
 /**
- *  Recived URL Scheme of GetSnippet or Open Fill-in.
+ *  Respose URL Scheme of GetSnippet or Open Fill-in.
  *  
- *  @param url recived callback url.
+ *  @param url callback url.
  *
  *
  **/

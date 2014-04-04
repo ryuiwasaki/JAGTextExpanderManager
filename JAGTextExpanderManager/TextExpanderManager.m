@@ -80,7 +80,7 @@ static TextExpanderManager *_sharedInstance;
 }
 
 //--------------------------------------------------------------//
-#pragma mark - Enable Snippets
+#pragma mark - Enable Snippets and Fill-in
 //--------------------------------------------------------------//
 
 - (void)enableTextExpanderToTextObjects:(NSArray *)textObjects nextDelegate:(id)nextDelegate{
@@ -96,11 +96,8 @@ static TextExpanderManager *_sharedInstance;
     self.nextDelegate = nextDelegate;
 }
 
-//--------------------------------------------------------------//
-#pragma mark - Fillins
-//--------------------------------------------------------------//
 
-- (void)enableTextExpanderFillinsToTextObjects:(NSArray *)textObjects nextDelegate:(id)nextDelegate{
+- (void)enableTextExpanderInAdditionFillinsToTextObjects:(NSArray *)textObjects nextDelegate:(id)nextDelegate{
     
     [self enableTextExpanderToTextObjects:textObjects nextDelegate:nextDelegate];
     [self enableFillinsToTextObjects:textObjects];
@@ -123,6 +120,10 @@ static TextExpanderManager *_sharedInstance;
         }
     }
 }
+
+//--------------------------------------------------------------//
+#pragma mark - Fillins
+//--------------------------------------------------------------//
 
 - (void)fillinsRequiredActionsAtIdentifierForTextArea:(IdentifierForTextAreaAction)identifierAction
                                    fillinCompletionHandler:(FillCompletionAction)fillCompletionAction{
