@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/ryuiwasaki/JAGTextExpanderManager.git' }
   s.source_files = 'JAGTextExpanderManager'
   s.requires_arc = true
-  s.dependency  = 'TextExpander'
+  s.dependency  = {'TextExpander'}
 end
