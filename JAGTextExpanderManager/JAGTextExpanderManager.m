@@ -33,7 +33,7 @@ static JAGTextExpanderManager *_sharedInstance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        _sharedInstance = [[TextExpanderManager alloc]init];
+        _sharedInstance = [[JAGTextExpanderManager alloc]init];
         [_sharedInstance currentTextExpander];
     });
     
