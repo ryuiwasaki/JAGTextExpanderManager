@@ -9,7 +9,7 @@
 
 static NSString *const kSMTEExpansionEnabled = @"SMTEExpansionEnabled";
 
-@interface  TextExpanderManager ()<SMTEFillDelegate>
+@interface  JAGTextExpanderManager ()<SMTEFillDelegate>
 
 @property (nonatomic,readwrite)SMTEDelegateController *currentTextExpander;
 @property (nonatomic,readwrite) BOOL enableFillin;
@@ -22,9 +22,9 @@ static NSString *const kSMTEExpansionEnabled = @"SMTEExpansionEnabled";
 @end
 
 
-@implementation TextExpanderManager
+@implementation JAGTextExpanderManager
 
-static TextExpanderManager *_sharedInstance;
+static JAGTextExpanderManager *_sharedInstance;
 
 + (id)sharedManager{
     

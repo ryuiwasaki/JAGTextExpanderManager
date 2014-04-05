@@ -12,7 +12,7 @@ typedef id (^FillCompletionAction)(NSString *textIdentifier,BOOL userCanceledFil
 typedef NSString *(^IdentifierForTextAreaAction)(id uiTextObject);
 typedef BOOL  (^PrepareForFillSwitchAction)(NSString *textIdentifier);
 
-@interface TextExpanderManager : NSObject
+@interface JAGTextExpanderManager : NSObject
 
 /**
  *  Singleton Class Method.
