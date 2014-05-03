@@ -1,5 +1,6 @@
 //
 //  JAGTextExpanderManager.h
+//  Ver.1.0.2
 //  Created by Ryu Iwasaki.
 //  Copyright (c) 2014年 Ryu Iwasaki. All rights reserved.
 //

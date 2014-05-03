@@ -35,6 +35,8 @@ static JAGTextExpanderManager *_sharedInstance;
         
         _sharedInstance = [[JAGTextExpanderManager alloc]init];
         [_sharedInstance currentTextExpander];
+        _sharedInstance.enableFillin = NO;
+        _sharedInstance.textObjectList = [NSMutableDictionary new];
     });
     
     return _sharedInstance;
@@ -51,8 +53,7 @@ static JAGTextExpanderManager *_sharedInstance;
         _sharedInstance.clientAppName = appName;
         _sharedInstance.getSnippetsScheme = getSnippetsScheme;
         _sharedInstance.fillCompletionScheme = fillCompletionScheme;
-        _sharedInstance.enableFillin = NO;
-        _sharedInstance.textObjectList = [NSMutableDictionary new];
+
     }
     
     return _sharedInstance;

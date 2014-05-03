@@ -1,0 +1,10 @@
+PODS:
+  - TextExpander (2.3.1)
+
+DEPENDENCIES:
+  - TextExpander
+
+SPEC CHECKSUMS:
+  TextExpander: 755ff25950efe16b13cbd7be1918cb088e475bf5
+
+COCOAPODS: 0.32.1
